@@ -1,5 +1,7 @@
 package com.olebas.tanks.display;
 
+import com.olebas.tanks.IO.Input;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferStrategy;
@@ -72,6 +74,10 @@ public abstract class Display {
 
     public static void setTitle(String title) {
         window.setTitle(title);
+    }
+
+    public static void addInputListener(Input inputListener) {
+        window.add(inputListener);
     }
 
 }
